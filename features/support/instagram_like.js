@@ -14,9 +14,9 @@ When('I see log in form', async function() {
 
 Then('I log in with {string} username and {string} password', async function(user, pass){
     const username = await driver.findElement(By.name("username"));
-    username.sendKeys('cucumber_test');
+    username.sendKeys('user');
     const password = await driver.findElement(By.name("password"));
-    password.sendKeys('741236985', Key.ENTER);
+    password.sendKeys('pass', Key.ENTER);
 });
 
 When('I see home button', async function(){
