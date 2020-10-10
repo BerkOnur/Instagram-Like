@@ -26,7 +26,7 @@ When('I see home button', {timeout: 10 * 1000}, async function(){
 
 Then('I click in with {string}',{timeout: 10 * 1000},  async function(home){
     const homepage = await driver.findElement(By.className("_8-yf5 ")).click();
-    //await driver.wait(homepage);
+    await driver.wait(homepage);
 });
 
 When('I see declaration button',{timeout: 10 * 1000}, async function(){
@@ -36,7 +36,7 @@ When('I see declaration button',{timeout: 10 * 1000}, async function(){
 
 Then('I see button click in with {string}',{timeout: 10 * 1000}, async function(bildirim){
     const bildirimbutonu = await driver.findElement(By.className('aOOlW   HoLwm ')).click();
-    //await driver.wait(bildirimbutonu);
+    await driver.wait(bildirimbutonu);
 });
 
 When('I see like button',{timeout: 10 * 1000}, async function(){
@@ -46,8 +46,6 @@ When('I see like button',{timeout: 10 * 1000}, async function(){
 
 Then('I click in with like button {string}',{timeout: 10 * 1000}, async function(begen){
     const begenibutonu = await driver.findElement(By.className('fr66n')).click();
-    //await driver.wait(begenibutonu);
+    await driver.wait(begenibutonu);
 });
-
-
 
