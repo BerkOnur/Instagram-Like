@@ -8,7 +8,5 @@ Feature: instagram
       Then I click in with "_8-yf5 "
       When I see declaration button
       Then I see button click in with "aOOlW   HoLwm "
-      When I see message button
-      Then I click in with message icon "xWeGp"
       When I see like button
       Then I click in with like button "fr66n"
