@@ -39,16 +39,6 @@ Then('I see button click in with {string}', async function(bildirim){
     //await driver.wait(condition, 7000);
 });
 
-When('I see message button', async function(){
-    const condition = until.elementLocated(By.className('xWeGp'));
-    await driver.wait(condition, 7000);
-});
-
-Then('I click in with message icon {string}', async function(mesaj){
-    const mesajlar = await driver.findElement(By.className('xWeGp'));
-    //await driver.wait(condition, 7000);
-});
-
 When('I see like button', async function(){
     const condition = until.elementLocated(By.className('fr66n'));
     //await driver.wait(condition, 7000);
