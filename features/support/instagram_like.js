@@ -31,7 +31,7 @@ Then('I click in with {string}',{timeout: 10 * 1000},  async function(home){
 
 When('I see declaration button',{timeout: 10 * 1000}, async function(){
     const condition = until.elementLocated(By.className('aOOlW   HoLwm '));
-    await driver.wait(condition, 7000);
+    await driver.wait(condition);
 });
 
 Then('I see button click in with {string}',{timeout: 10 * 1000}, async function(bildirim){
@@ -48,3 +48,6 @@ Then('I click in with like button {string}',{timeout: 10 * 1000}, async function
     const begenibutonu = await driver.findElement(By.className('fr66n')).click();
     //await driver.wait(begenibutonu);
 });
+
+
+
