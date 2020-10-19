@@ -14,9 +14,9 @@ When('I see log in form',{timeout: 10 * 1000}, async function() {
 
 Then('I log in with {string} username and {string} password', async function(user, pass){
     const username = await driver.findElement(By.name("username"));
-    username.sendKeys('user');
+    username.sendKeys('cucumber_test');
     const password = await driver.findElement(By.name("password"));
-    password.sendKeys('pass', Key.ENTER);
+    password.sendKeys('741236985', Key.ENTER);
 });
 
 When('I see home button', {timeout: 10 * 1000}, async function(){
@@ -26,7 +26,7 @@ When('I see home button', {timeout: 10 * 1000}, async function(){
 
 Then('I click in with {string}',{timeout: 10 * 1000},  async function(home){
     const homepage = await driver.findElement(By.className("_8-yf5 ")).click();
-    await driver.wait(homepage);
+    
 });
 
 When('I see declaration button',{timeout: 10 * 1000}, async function(){
@@ -36,7 +36,7 @@ When('I see declaration button',{timeout: 10 * 1000}, async function(){
 
 Then('I see button click in with {string}',{timeout: 10 * 1000}, async function(bildirim){
     const bildirimbutonu = await driver.findElement(By.className('aOOlW   HoLwm ')).click();
-    await driver.wait(bildirimbutonu);
+   
 });
 
 When('I see like button',{timeout: 10 * 1000}, async function(){
@@ -46,6 +46,6 @@ When('I see like button',{timeout: 10 * 1000}, async function(){
 
 Then('I click in with like button {string}',{timeout: 10 * 1000}, async function(begen){
     const begenibutonu = await driver.findElement(By.className('fr66n')).click();
-    await driver.wait(begenibutonu);
+    
 });
 
